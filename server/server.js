@@ -17,7 +17,7 @@ todo.save().then((doc)=>{
 res.send(doc)
 }, (e)=>{
 res.status(400).send(e.message)
-})
+});
 });
 
 app.get("/todos", (req, res)=>{
