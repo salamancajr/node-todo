@@ -41,11 +41,7 @@ app.get("/todos/:id", (req, res)=>{
                  }
                  res.send({todo});
                 
-            }, (e)=>{
-        res.status(400).send()
-        console.log("could not find todo", e.message);
-        
-    }).catch((e)=>{res.status(400).send()})
+            }).catch((e)=>{res.status(400).send()})
     console.log(id);
     
     });
