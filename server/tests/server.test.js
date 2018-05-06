@@ -109,7 +109,7 @@ request(app)
         return done(err);
     }
 Todo.findById(hexId).then((todo)=>{
-expect(todo).toBe(null);
+expect(todo).toBeFalsy();
 done();
 }).catch((err)=>done(err));
 
